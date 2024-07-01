@@ -1,0 +1,368 @@
+[
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-1",
+        "name": [{
+          "use": "official",
+          "family": "Miller",
+          "given": ["James"]
+        }],
+        "gender": "male",
+        "birthDate": "1979-01-01"
+      },
+      "records": [
+        {
+          "date": "2019-03-10",
+          "type": "Condition",
+          "description": "Diagnosed with Bronchitis",
+          "medications": ["Amoxicillin 500mg"]
+        },
+        {
+          "date": "2021-04-15",
+          "type": "Condition",
+          "description": "Diagnosed with Diabetes mellitus",
+          "medications": ["Metformin 500mg"]
+        },
+        {
+          "date": "2022-06-30",
+          "type": "Procedure",
+          "description": "Underwent knee surgery",
+          "medications": ["Ibuprofen 400mg"]
+        },
+        {
+          "date": "2023-08-20",
+          "type": "Condition",
+          "description": "Diagnosed with Hypertension",
+          "medications": ["Atenolol 50mg"]
+        }
+      ]
+    },
+    "output": "Age: 45\nConditions:\n  - Bronchitis: Diagnosed on 2019-03-10, treated with Amoxicillin 500mg\n  - Diabetes mellitus: Diagnosed on 2021-04-15, treated with Metformin 500mg\n  - Hypertension: Diagnosed on 2023-08-20, treated with Atenolol 50mg\nProcedures:\n  - Knee surgery: Performed on 2022-06-30, treated with Ibuprofen 400mg"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-2",
+        "name": [{
+          "use": "official",
+          "family": "Taylor",
+          "given": ["Sarah"]
+        }],
+        "gender": "female",
+        "birthDate": "1982-05-15"
+      },
+      "records": [
+        {
+          "date": "2018-11-10",
+          "type": "Condition",
+          "description": "Diagnosed with Asthma",
+          "medications": ["Albuterol inhaler"]
+        },
+        {
+          "date": "2020-05-10",
+          "type": "Condition",
+          "description": "Diagnosed with Hypertension",
+          "medications": ["Atenolol 50mg"]
+        },
+        {
+          "date": "2023-02-20",
+          "type": "Condition",
+          "description": "Diagnosed with Seasonal Allergies",
+          "medications": ["Cetirizine 10mg"]
+        }
+      ]
+    },
+    "output": "Age: 42\nConditions:\n  - Asthma: Diagnosed on 2018-11-10, treated with Albuterol inhaler\n  - Hypertension: Diagnosed on 2020-05-10, treated with Atenolol 50mg\n  - Seasonal Allergies: Diagnosed on 2023-02-20, treated with Cetirizine 10mg"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-3",
+        "name": [{
+          "use": "official",
+          "family": "Brown",
+          "given": ["Michael"]
+        }],
+        "gender": "male",
+        "birthDate": "1964-09-23"
+      },
+      "records": [
+        {
+          "date": "2018-07-10",
+          "type": "Condition",
+          "description": "Diagnosed with Diabetes mellitus",
+          "medications": ["Metformin 500mg"]
+        },
+        {
+          "date": "2022-01-15",
+          "type": "Condition",
+          "description": "Diagnosed with High cholesterol",
+          "medications": ["Atorvastatin 20mg"]
+        },
+        {
+          "date": "2023-05-12",
+          "type": "Condition",
+          "description": "Diagnosed with Hypertension",
+          "medications": ["Amlodipine 5mg"]
+        }
+      ]
+    },
+    "output": "Age: 59\nConditions:\n  - Diabetes mellitus: Diagnosed on 2018-07-10, treated with Metformin 500mg\n  - High cholesterol: Diagnosed on 2022-01-15, treated with Atorvastatin 20mg\n  - Hypertension: Diagnosed on 2023-05-12, treated with Amlodipine 5mg"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-4",
+        "name": [{
+          "use": "official",
+          "family": "Johnson",
+          "given": ["Emily"]
+        }],
+        "gender": "female",
+        "birthDate": "1985-04-20"
+      },
+      "records": [
+        {
+          "date": "2019-11-05",
+          "type": "Condition",
+          "description": "Diagnosed with Migraine",
+          "medications": ["Sumatriptan 50mg"]
+        },
+        {
+          "date": "2021-07-15",
+          "type": "Condition",
+          "description": "Diagnosed with Thyroid Disorder",
+          "medications": ["Levothyroxine 75mcg"]
+        },
+        {
+          "date": "2022-11-20",
+          "type": "Procedure",
+          "description": "Underwent appendectomy",
+          "medications": ["Acetaminophen 500mg"]
+        }
+      ]
+    },
+    "output": "Age: 39\nConditions:\n  - Migraine: Diagnosed on 2019-11-05, treated with Sumatriptan 50mg\n  - Thyroid Disorder: Diagnosed on 2021-07-15, treated with Levothyroxine 75mcg\nProcedures:\n  - Appendectomy: Performed on 2022-11-20, treated with Acetaminophen 500mg"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-5",
+        "name": [{
+          "use": "official",
+          "family": "Williams",
+          "given": ["Christopher"]
+        }],
+        "gender": "male",
+        "birthDate": "1975-06-18"
+      },
+      "records": [
+        {
+          "date": "2018-01-30",
+          "type": "Condition",
+          "description": "Diagnosed with Chronic Kidney Disease",
+          "medications": ["Lisinopril 10mg"]
+        },
+        {
+          "date": "2019-12-10",
+          "type": "Procedure",
+          "description": "Underwent cataract surgery",
+          "medications": ["Prednisolone eye drops"]
+        },
+        {
+          "date": "2021-10-22",
+          "type": "Condition",
+          "description": "Diagnosed with Hyperlipidemia",
+          "medications": ["Simvastatin 20mg"]
+        }
+      ]
+    },
+    "output": "Age: 48\nConditions:\n  - Chronic Kidney Disease: Diagnosed on 2018-01-30, treated with Lisinopril 10mg\n  - Hyperlipidemia: Diagnosed on 2021-10-22, treated with Simvastatin 20mg\nProcedures:\n  - Cataract surgery: Performed on 2019-12-10, treated with Prednisolone eye drops"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-6",
+        "name": [{
+          "use": "official",
+          "family": "Davis",
+          "given": ["Linda"]
+        }],
+        "gender": "female",
+        "birthDate": "1980-03-05"
+      },
+      "records": [
+        {
+          "date": "2017-06-15",
+          "type": "Condition",
+          "description": "Diagnosed with Osteoarthritis",
+          "medications": ["Naproxen 500mg"]
+        },
+        {
+          "date": "2019-09-25",
+          "type": "Condition",
+          "description": "Diagnosed with Rheumatoid Arthritis",
+          "medications": ["Methotrexate 15mg"]
+        },
+        {
+          "date": "2023-03-10",
+          "type": "Condition",
+          "description": "Diagnosed with Depression",
+          "medications": ["Sertraline 50mg"]
+        }
+      ]
+    },
+    "output": "Age: 44\nConditions:\n  - Osteoarthritis: Diagnosed on 2017-06-15, treated with Naproxen 500mg\n  - Rheumatoid Arthritis: Diagnosed on 2019-09-25, treated with Methotrexate 15mg\n  - Depression: Diagnosed on 2023-03-10, treated with Sertraline 50mg"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-7",
+        "name": [{
+          "use": "official",
+          "family": "Martinez",
+          "given": ["David"]
+        }],
+        "gender": "male",
+        "birthDate": "1972-08-12"
+      },
+      "records": [
+        {
+          "date": "2016-02-20",
+          "type": "Condition",
+          "description": "Diagnosed with Heart Disease",
+          "medications": ["Aspirin 81mg"]
+        },
+        {
+          "date": "2018-05-10",
+          "type": "Condition",
+          "description": "Diagnosed with Diabetes mellitus",
+          "medications": ["Metformin 500mg"]
+        },
+        {
+          "date": "2021-11-22",
+          "type": "Procedure",
+          "description": "Underwent coronary artery bypass grafting",
+          "medications": ["Warfarin 5mg"]
+        }
+      ]
+    },
+    "output": "Age: 52\nConditions:\n  - Heart Disease: Diagnosed on 2016-02-20, treated with Aspirin 81mg\n  - Diabetes mellitus: Diagnosed on 2018-05-10, treated with Metformin 500mg\nProcedures:\n  - Coronary artery bypass grafting: Performed on 2021-11-22, treated with Warfarin 5mg"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-8",
+        "name": [{
+          "use": "official",
+          "family": "Robinson",
+          "given": ["Laura"]
+        }],
+        "gender": "female",
+        "birthDate": "1990-11-22"
+      },
+      "records": [
+        {
+          "date": "2017-09-10",
+          "type": "Condition",
+          "description": "Diagnosed with Anemia",
+          "medications": ["Ferrous sulfate 325mg"]
+        },
+        {
+          "date": "2020-01-15",
+          "type": "Condition",
+          "description": "Diagnosed with Hypothyroidism",
+          "medications": ["Levothyroxine 50mcg"]
+        },
+        {
+          "date": "2023-04-12",
+          "type": "Procedure",
+          "description": "Underwent gallbladder removal",
+          "medications": ["Ibuprofen 400mg"]
+        }
+      ]
+    },
+    "output": "Age: 33\nConditions:\n  - Anemia: Diagnosed on 2017-09-10, treated with Ferrous sulfate 325mg\n  - Hypothyroidism: Diagnosed on 2020-01-15, treated with Levothyroxine 50mcg\nProcedures:\n  - Gallbladder removal: Performed on 2023-04-12, treated with Ibuprofen 400mg"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-9",
+        "name": [{
+          "use": "official",
+          "family": "Clark",
+          "given": ["Patricia"]
+        }],
+        "gender": "female",
+        "birthDate": "1987-02-18"
+      },
+      "records": [
+        {
+          "date": "2019-04-20",
+          "type": "Condition",
+          "description": "Diagnosed with Anxiety Disorder",
+          "medications": ["Alprazolam 0.5mg"]
+        },
+        {
+          "date": "2021-08-30",
+          "type": "Condition",
+          "description": "Diagnosed with Insomnia",
+          "medications": ["Zolpidem 10mg"]
+        },
+        {
+          "date": "2023-07-15",
+          "type": "Condition",
+          "description": "Diagnosed with Hypertension",
+          "medications": ["Lisinopril 20mg"]
+        }
+      ]
+    },
+    "output": "Age: 37\nConditions:\n  - Anxiety Disorder: Diagnosed on 2019-04-20, treated with Alprazolam 0.5mg\n  - Insomnia: Diagnosed on 2021-08-30, treated with Zolpidem 10mg\n  - Hypertension: Diagnosed on 2023-07-15, treated with Lisinopril 20mg"
+  },
+  {
+    "input": {
+      "patient": {
+        "resourceType": "Patient",
+        "id": "patient-10",
+        "name": [{
+          "use": "official",
+          "family": "Garcia",
+          "given": ["Steven"]
+        }],
+        "gender": "male",
+        "birthDate": "1969-07-24"
+      },
+      "records": [
+        {
+          "date": "2017-03-10",
+          "type": "Condition",
+          "description": "Diagnosed with Asthma",
+          "medications": ["Albuterol inhaler"]
+        },
+        {
+          "date": "2018-10-05",
+          "type": "Condition",
+          "description": "Diagnosed with High Blood Pressure",
+          "medications": ["Amlodipine 5mg"]
+        },
+        {
+          "date": "2021-12-30",
+          "type": "Procedure",
+          "description": "Underwent hip replacement",
+          "medications": ["Tramadol 50mg"]
+        }
+      ]
+    },
+    "output": "Age: 54\nConditions:\n  - Asthma: Diagnosed on 2017-03-10, treated with Albuterol inhaler\n  - High Blood Pressure: Diagnosed on 2018-10-05, treated with Amlodipine 5mg\nProcedures:\n  - Hip replacement: Performed on 2021-12-30, treated with Tramadol 50mg"
+  }
+]
